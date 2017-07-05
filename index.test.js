@@ -1,6 +1,6 @@
 const msk = require("./index");
 
-test("should mask numbers", function() {
+test("should mask numbers", () => {
   const value = "123";
   const mask = "9 9 9";
 
@@ -9,7 +9,7 @@ test("should mask numbers", function() {
   expect(result).toBe("1 2 3");
 });
 
-test("should mask alpha characters", function() {
+test("should mask alpha characters", () => {
   const value = "abc";
   const mask = "A A A";
 
@@ -18,7 +18,7 @@ test("should mask alpha characters", function() {
   expect(result).toBe("a b c");
 });
 
-test("should mask alphaanumeric characters", function() {
+test("should mask alphaanumeric characters", () => {
   const value = "abc123";
   const mask = "S S SS SS";
 
@@ -27,7 +27,7 @@ test("should mask alphaanumeric characters", function() {
   expect(result).toBe("a b c1 23");
 });
 
-test("should mask any characters", function() {
+test("should mask any characters", () => {
   const value = "-.1a";
   const mask = "* * * *";
 
@@ -36,7 +36,7 @@ test("should mask any characters", function() {
   expect(result).toBe("- . 1 a");
 });
 
-test("should return empty string if input is empty", function() {
+test("should return empty string if input is empty", () => {
   const value = "-.1a";
   const mask = "* * * *";
 
@@ -47,7 +47,7 @@ test("should return empty string if input is empty", function() {
   expect(resultSecondArgument).toBe("");
 });
 
-test("should remove exceeding characters", function() {
+test("should remove exceeding characters", () => {
   const value = "22250-040ops";
   const mask = "99999-999";
 
@@ -56,8 +56,8 @@ test("should remove exceeding characters", function() {
   expect(result).toBe("22250-040");
 });
 
-describe("README examples", function() {
-  it("should mask the phone example properly", function() {
+describe("README examples", () => {
+  it("should mask the phone example properly", () => {
     const value = "552122222222";
     const mask = "+99 (99) 9999-9999";
 
@@ -66,7 +66,7 @@ describe("README examples", function() {
     expect(result).toBe("+55 (21) 2222-2222");
   });
 
-  it("should mask the Canadian postal code example properly", function() {
+  it("should mask the Canadian postal code example properly", () => {
     const value = "V6G1C9";
     const mask = "A9A 9A9";
 
@@ -75,7 +75,7 @@ describe("README examples", function() {
     expect(result).toBe("V6G 1C9");
   });
 
-  it("should mask the anything symbol example properly", function() {
+  it("should mask the anything symbol example properly", () => {
     const value = "I love msk";
     const mask = "*-****-***";
 
@@ -84,7 +84,7 @@ describe("README examples", function() {
     expect(result).toBe("I-love-msk");
   });
 
-  it("should mask removing exceeding characters example properly", function() {
+  it("should mask removing exceeding characters example properly", () => {
     const value = "22231-0004131";
     const mask = "99999-999";
 
