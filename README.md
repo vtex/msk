@@ -1,4 +1,4 @@
-# msk
+# msk [![Build Status](https://travis-ci.org/vtex/msk.svg?branch=master)](https://travis-ci.org/vtex/msk)
 
 > Small library to mask strings
 
