@@ -13,6 +13,13 @@
   ],
   "author": "Breno Calazans (@breno_calazans)",
   "license": "MIT",
+  "repository": "vtex/msk",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
     "eslint": "^4.1.1",
     "eslint-plugin-jest": "^20.0.3",
