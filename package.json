@@ -1,0 +1,21 @@
+{
+  "name": "msk",
+  "version": "1.0.0",
+  "description": "Small library to mask strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "format",
+    "mask",
+    "string"
+  ],
+  "author": "Breno Calazans (@breno_calazans)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.4"
+  }
+}
