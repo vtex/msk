@@ -3,7 +3,10 @@ const ALPHA = "A";
 const ALPHANUM = "S";
 const ALL = "*";
 
-function msk(value, mask, removeExceedingChars = false) {
+function msk(value, mask) {
+  const removeExceedingChars =
+    arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
   if (!value || !mask) return "";
   value = value.toString();
 
