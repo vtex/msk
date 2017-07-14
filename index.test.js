@@ -1,4 +1,6 @@
 const msk = require("./index");
+const uglify = require("uglify-js");
+const fs = require("fs");
 
 test("should mask numbers", () => {
   const value = "123";
@@ -54,6 +56,12 @@ test("should remove exceeding characters", () => {
   const result = msk.fit(value, mask);
 
   expect(result).toBe("22250-040");
+});
+
+test("should pass uglify", () => {
+  const minify = () => uglify.minify("index.js");
+
+  expect(minify).not.toThrow();
 });
 
 describe("README examples", () => {

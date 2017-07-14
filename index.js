@@ -10,7 +10,7 @@ function msk(value, mask) {
   if (!value || !mask) return "";
   value = value.toString();
 
-  for (let i = 0; i < value.length; i++) {
+  for (var i = 0; i < value.length; i++) {
     const maskToken = mask[i];
     // If the character is OK with the mask
     if (maskToken && match(value[i], maskToken)) {
