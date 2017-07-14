@@ -1,6 +1,6 @@
 {
   "name": "msk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small library to mask strings",
   "main": "index.js",
   "scripts": {
