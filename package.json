@@ -1,6 +1,6 @@
 {
   "name": "msk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Small library to mask strings",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
