@@ -6,7 +6,8 @@
   "module": "dist/index.esm.js",
   "browser": "dist/index.umd.js",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "jest",
